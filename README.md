@@ -36,7 +36,7 @@ Este projeto foi criado com o  [Angular CLI](https://github.com/angular/angular-
     A API fica localizada em http://localhost:3000
 
 ## Release Notes
-1.0.1
-Primeira versão:
-    - Criação das funcionalidades
-    - Criação da página HTML Simples
+    1.0.1
+    Primeira versão:
+        - Criação das funcionalidades
+        - Criação da página HTML Simples
