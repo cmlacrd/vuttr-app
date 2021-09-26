@@ -1,27 +1,43 @@
 # Vuttr
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
+Este projeto foi criado com o  [Angular CLI](https://github.com/angular/angular-cli) versão 11.0.3.
 
-## Development server
+## Instalação
+1. Iniciando a aplicação
+    #Clone o repositório
+    git clone
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+    # Acesse o diretório
+    cd dir_do_projeto
 
-## Code scaffolding
+    # Instale as dependencias
+    npm install
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+    # Inicie o projeto
+    ng serve --open
 
-## Build
+A aplicação fica localizada em http://localhost:4200
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+2. Iniciando o backend
+    #Acesse o diretório da API
+    https://github.com/gustavo-startaideia/rest-fake-api
 
-## Running unit tests
+    #Clone o repositório
+    git clone
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    # Acesse o diretório
+    cd dir_do_projeto
 
-## Running end-to-end tests
+    # Instale as dependencias
+    npm install
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+    # Inicie o projeto
+    npx json-server db.json
 
-## Further help
+A API fica localizada em http://localhost:3000
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Release Notes
+1.0.1
+Primeira versão:
+    - Criação das funcionalidades
+    - Criação da página HTML Simples
