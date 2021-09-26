@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+a {
+	text-decoration: none;
+}
+
+/**
+ * Remove list-style
+ */ 
+
+ol, ul {
+	list-style: none;
+}
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, footer, header, nav, section, main {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul {
+	font-size: 1em;
+    font-weight: normal;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*HEADER STYLES */
+#header{
+    width: 80%;
+    padding: 15px 0;
+    position: relative;
+    top: 5%;
+    left: 10%;
+    z-index: 10;
+}
+.title {
+    letter-spacing: 0.84px;
+    color: #170C3A;
+    opacity: 1;
+    font-size: 2em;
+    padding: 15px 0;
+}
+
+.subtitle{
+    font-size: 1.5em;
+    letter-spacing: 0.6px;
+    color: #170C3A;
+    opacity: 1;
+    padding: 15px 0;
+}
+
+
+/*CONTENT STYLES */
+.container{
+    width: 80%;
+    padding: 25px 0;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+/* CARDS STYLES */
+.cards-vuttr{
+    padding: 25px 0;
+    margin: 15px;
+}
+
+/* BUTTONS STYLES */
+button {
+    padding: 1px 6px 1px 6px;
+    width: 122px !important;
+    height: 50px !important;
+    border-radius: 5px;
+}
+ 
+button > img,
+button > span {
+    vertical-align: middle;
+    margin: 5px;
+}
+
+.btn-add{
+    font: normal normal 600 18px/24px Source Sans Pro;
+    letter-spacing: 0.36px;
+    color: #365DF0;
+    opacity: 1;
+    background: #E1E7FD 0% 0% no-repeat padding-box;
+    float: right;
+}
+
+/* INPUTS */
+.input-search{
+    background: url(assets/svg/search.svg) no-repeat scroll 7px 7px;
+    background-size: 22px;
+    padding-left:45px;
+}
+
+input[type=checkbox] {
+    transform: scale(0.5);
+    width: 13%;
+}
+
+.checkbox-label{
+    display: inline-block !important;
+    width: 140px;
+    text-align: right;
+    top: -33px;
+    position: relative;
+    right: -27px;
+}
+
+/* MODALS */
+
+.modal-title{
+    text-align: left;
+    font: normal normal 600 26px/32px Source Sans Pro;
+    letter-spacing: 0.52px;
+    color: #170C3A;
+    opacity: 1;
+}
+
+.modal-body{
+    text-align: left;
+    font: normal normal normal 20px/26px Source Sans Pro;
+    letter-spacing: 0.4px;
+    color: #8F8A9B;
+    opacity: 1;
+}
+
+.btn-no{
+    text-align: center;
+    letter-spacing: 0.36px;
+    color: #365DF0;
+    opacity: 1;
+    background: #E1E7FD 0% 0% no-repeat padding-box;
+}
+
+.btn-yes{
+    text-align: center;
+    letter-spacing: 0.36px;
+    color: #FFFFFF;
+    opacity: 1;
+    background: #365DF0 0% 0% no-repeat padding-box;
+}
+
+.btn-tool{
+    float: right;
+}

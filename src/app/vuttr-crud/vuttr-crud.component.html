@@ -1,0 +1,89 @@
+<header id="header">
+    <h1 class="title">VUTTR</h1>
+    <h3 class="subtitle">Very Useful Tools to Remember</h3>
+</header>
+<div class="container">
+  <div class="row">
+    <div class="col-5">
+      <div class="form-group" id="searchDiv">
+        <input (keyup)="onKey($event)" name="searching" type="text" class="form-control input-search" id="searchTool" placeholder="search">
+      </div>
+    </div>
+    <div class="col-3">
+      <input name="searching" type="checkbox" class="form-control tag" id="searchTag" checked>
+      <label class="checkbox-label">Search in tags only</label>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-add" (click)="open(addTool,'','')">
+        <span>New tool</span>
+      </button>
+    </div>
+  </div>
+  <section class="cards-vuttr">
+    <div class="card" *ngFor="let tool of tools" id="{{tool.id}}">
+      <div class="row card-body">
+        <div class="col-8">
+          <a href='{{tool.link}}'>{{tool.title}}</a>  
+          <p>{{tool.description}}</p>
+          <span>{{tool.tags}}</span>
+        </div> 
+        <div class="col-4">
+          <span class="align-top remove">
+            <a (click)="open(removeTool,tool.id,'remove')" class="delete">
+              <img class="trash" src="assets/svg/delete.svg">
+            </a>
+          </span>
+        </div>           
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- modals  -->
+  <ng-template #addTool let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Create a new tool</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <form class="form"  [formGroup]="toolForm" (ngSubmit)="createTool()">
+            <div class="form-group">
+              <label for="toolName">Tool Name</label>
+              <input formControlName="title" type="text" class="form-control" id="toolName" aria-describedby="Tool Name">
+            </div>
+            <div class="form-group">
+              <label for="toolLink">Tool Link</label>
+              <input formControlName="link" type="text" class="form-control" id="toolLink" aria-describedby="Tool Link">
+            </div>
+            <div class="form-group">
+              <label for="toolDescription">Tool Description</label>
+              <textarea formControlName="description" class="form-control" id="toolDescription" aria-describedby="Tool Description"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="toolLink">Tags</label>
+              <input formControlName="tags" type="text" class="form-control" id="toolLink" aria-describedby="Tool tags">
+            </div>
+            <button [disabled]="toolForm.invalid" type="submit" class="btn btn-primary btn-tool" (click)="modal.close('Save click')">Send</button>
+          </form>
+    </div>
+  </ng-template>
+
+  <ng-template #removeTool let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Remove tool</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+    <div class="modal-body removeId" id="removeId">
+      <span>Are you sure you want to remove?</span>
+      <div class="removeButtons">
+        <button (click)="modal.close('Save click')" class="btn btn-no navitem"><span>No</span></button>
+        <button (click)="deleting();modal.close('Save click')" class="btn btn-yes navitem"><span>Yes</span></button>
+      </div>
+    </div>
+  </ng-template>
+<!--end of modals  -->
