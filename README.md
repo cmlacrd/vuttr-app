@@ -1,6 +1,14 @@
-# Vuttr
+# VUTTR (Very Useful Tools to Remember)
 
 Este projeto foi criado com o  [Angular CLI](https://github.com/angular/angular-cli) versão 11.0.3.
+
+O VUTTR é uma aplicação simples para gerenciar ferramentas com seus respectivos nomes, links, descrições e tags.
+
+## Funcionalidades
+    1. O usuário pode ver a lista de todas as ferramentas cadastradas
+    2. O usuário pode adicionar novas ferramentas
+    3. O usuário pode remover uma ferramenta
+    4. O usuário pode buscar ferramentas dinamicamente (global ou só por tags)
 
 ## Instalação da aplicação
     -Clone o repositório
@@ -36,7 +44,7 @@ Este projeto foi criado com o  [Angular CLI](https://github.com/angular/angular-
     A API fica localizada em http://localhost:3000
 
 ## Release Notes
-    1.0.1
+    #1.0.1
     Primeira versão:
         - Criação das funcionalidades
         - Criação da página HTML Simples
