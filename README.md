@@ -4,12 +4,6 @@ Este projeto foi criado com o  [Angular CLI](https://github.com/angular/angular-
 
 O VUTTR é uma aplicação simples para gerenciar ferramentas com seus respectivos nomes, links, descrições e tags.
 
-## Funcionalidades
-    1. O usuário pode ver a lista de todas as ferramentas cadastradas
-    2. O usuário pode adicionar novas ferramentas
-    3. O usuário pode remover uma ferramenta
-    4. O usuário pode buscar ferramentas dinamicamente (global ou só por tags)
-
 ## Instalação da aplicação
     -Clone o repositório
     git clone
@@ -21,7 +15,7 @@ O VUTTR é uma aplicação simples para gerenciar ferramentas com seus respectiv
     npm install
 
     -Inicie o projeto
-    ng serve --open
+    ng serve
 
     A aplicação fica localizada em http://localhost:4200
 
@@ -42,6 +36,20 @@ O VUTTR é uma aplicação simples para gerenciar ferramentas com seus respectiv
     npx json-server db.json
     
     A API fica localizada em http://localhost:3000
+
+## Funcionalidades
+    1. O usuário pode ver a lista de todas as ferramentas cadastradas
+    2. O usuário pode adicionar novas ferramentas
+    3. O usuário pode remover uma ferramenta
+    4. O usuário pode buscar ferramentas dinamicamente (global ou só por tags)
+
+## Tecnologias
+    Angular CLI
+    Bootstrap
+    JSON Server
+    HTML5
+    CSS3
+    JavaScript
 
 ## Release Notes
     #1.0.1
