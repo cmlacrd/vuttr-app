@@ -4,34 +4,34 @@ Este projeto foi criado com o  [Angular CLI](https://github.com/angular/angular-
 
 ## Instalação
 1. Iniciando a aplicação
-    #Clone o repositório
+    -Clone o repositório
     git clone
 
-    # Acesse o diretório
+    -Acesse o diretório
     cd dir_do_projeto
 
-    # Instale as dependencias
+    -Instale as dependencias
     npm install
 
-    # Inicie o projeto
+    -Inicie o projeto
     ng serve --open
 
 A aplicação fica localizada em http://localhost:4200
 
 2. Iniciando o backend
-    #Acesse o diretório da API
+    -Acesse o diretório da API
     https://github.com/gustavo-startaideia/rest-fake-api
 
-    #Clone o repositório
+    -Clone o repositório
     git clone
 
-    # Acesse o diretório
+    -Acesse o diretório
     cd dir_do_projeto
 
-    # Instale as dependencias
+    -Instale as dependencias
     npm install
 
-    # Inicie o projeto
+    -Inicie o projeto
     npx json-server db.json
 
 A API fica localizada em http://localhost:3000
